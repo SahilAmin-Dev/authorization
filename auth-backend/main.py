@@ -2,6 +2,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
-def home():
-    return {"message": "Backend is working"}
+from routes.login import router as login_router
+
+app = FastAPI()
+
+app.include_router(login_router)
