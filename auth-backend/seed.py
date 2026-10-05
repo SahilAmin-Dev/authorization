@@ -17,4 +17,4 @@ admin = {
     "role": "admin"
 }
 
-collection.insert_many([user, admin])
+# collection.insert_many([user, admin])
